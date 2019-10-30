@@ -35,7 +35,7 @@ import { AppRegistry } from 'react-native';
 
 // import App from './native/ToastComponent'
 // import App from './src/book/TestLoginIn';
-import App from './src/book/TestColor';
+import App from './src/1_res/TestColor';
 // DeviceInfo.getVersion()
 import { name as appName } from './app.json';
 AppRegistry.registerComponent(appName, () => App);
