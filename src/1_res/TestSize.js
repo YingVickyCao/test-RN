@@ -8,7 +8,8 @@ const pxValue = PixelRatio.get();
 /**
  * androdi:float
  * float -> int. parseInt(width)
- *
+ 
+ 
  * ios:int
  */
 const { height, width } = Dimensions.get('window');
