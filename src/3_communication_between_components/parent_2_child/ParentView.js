@@ -9,13 +9,13 @@ import { styles } from '../../CommunicationStyle';
 export default class ParentComponent extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { parent_to_child_1: buildDate() };
+		this.state = { date: buildDate() };
 		this._onPressUpdateDate = this._onPressUpdateDate.bind(this);
 	}
 
 	_onPressUpdateDate() {
 		this.setState({
-			parent_to_child_1: buildDate()
+			date: buildDate()
 		});
 	}
 
@@ -41,7 +41,7 @@ export default class ParentComponent extends Component {
 			<View style={styles.container}>
 				<Text style={styles.topic}> Parent -> Child</Text>
 				<Text style={styles.label}> Parent</Text>
-				<Text style={styles.label}> {this.state.parent_to_child_1}</Text>
+				<Text style={styles.label}> {this.state.date}</Text>
 				<Text style={styles.btn} onPress={this._onPressUpdateDate}>
 					Update
 				</Text>
@@ -49,7 +49,7 @@ export default class ParentComponent extends Component {
 				{/* 写成变量的好处：向child传递的props 不能更改。定义成变量时，可以修改变量的值，从而自动改变child的显示  */}
 				{/* <ChildComponent childData={parent_to_child_2}></ChildComponent> */}
 
-				<ChildComponent style={{ marginTop: 20 }} childData={this.state.parent_to_child_1}></ChildComponent>
+				<ChildComponent style={{ marginTop: 20 }} childData={this.state.date}></ChildComponent>
 
 				{/* 方式1： */}
 				{/* <ChildComponent childData="ABC"></ChildComponent> */}
