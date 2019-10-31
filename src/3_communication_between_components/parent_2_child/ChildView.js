@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { styles } from '../CommunicationStyle';
+import { styles } from '../../CommunicationStyle';
 
 export default class ChildComponent extends Component {
 	render() {

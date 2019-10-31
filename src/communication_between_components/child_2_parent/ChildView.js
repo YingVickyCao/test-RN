@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { buildDate } from '../DateInfo';
+import { buildDate } from '../../DateInfo';
 
 export default class ChildComponent extends Component {
 	render() {

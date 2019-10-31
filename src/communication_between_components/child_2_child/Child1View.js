@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { styles } from '../CommunicationStyle';
-import { buildDate } from '../DateInfo';
+import { styles } from '../../CommunicationStyle';
+import { buildDate } from '../../DateInfo';
 
 export default class Child1Component extends Component {
 	render() {

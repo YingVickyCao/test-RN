@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function buildDate() {
 	// var date = new Date();
 	// var year = date.getFullYear().toString();
